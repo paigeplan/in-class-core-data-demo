@@ -30,21 +30,30 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k95-Ov-27f">
                                                     <rect key="frame" x="21" y="6" width="45" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="iw3-5a-d0h"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-jz-aha">
                                                     <rect key="frame" x="21" y="27" width="30" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="2Vq-yP-vLp"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="k95-Ov-27f" firstAttribute="top" secondItem="SeZ-WN-npl" secondAttribute="top" constant="6" id="E64-Ga-B59"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k95-Ov-27f" secondAttribute="trailing" constant="20" symbolic="YES" id="EXR-I5-fgs"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Oh2-jz-aha" secondAttribute="trailing" constant="20" symbolic="YES" id="OeZ-zY-4nt"/>
                                                 <constraint firstItem="k95-Ov-27f" firstAttribute="leading" secondItem="SeZ-WN-npl" secondAttribute="leading" constant="21" id="Vam-iP-8PT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Oh2-jz-aha" secondAttribute="bottom" constant="24.5" id="txR-hA-4Ai"/>
                                                 <constraint firstItem="Oh2-jz-aha" firstAttribute="top" secondItem="k95-Ov-27f" secondAttribute="bottom" id="uiZ-JQ-Lxa"/>
-                                                <constraint firstItem="k95-Ov-27f" firstAttribute="centerY" secondItem="SeZ-WN-npl" secondAttribute="centerY" constant="-20" id="vNz-K6-hKX"/>
                                                 <constraint firstItem="Oh2-jz-aha" firstAttribute="leading" secondItem="k95-Ov-27f" secondAttribute="leading" id="wVU-je-1fw"/>
                                             </constraints>
                                         </tableViewCellContentView>
